@@ -1,10 +1,4 @@
-<<<<<<< Updated upstream
-const obj = {
-  name: "John",
-  age: 42,
-  isMarried: true
-}
-=======
+
 const numberOfFilms = +prompt("How many films do you watched ?", '');
 
 const personalMovieDB = {
@@ -20,6 +14,7 @@ const movieName = prompt("Which are the last film do you see ?", ''),
       filmEstimation = +prompt("Please estimate the film", '');
 
 personalMovieDB.movies[movieName] = filmEstimation;
+
 
 for (let i = 0; i < 2; i++) {
   const movieName = prompt("Which are the last film do you see ?", ''),
@@ -48,6 +43,3 @@ if (personalMovieDB.count < 10) {
 }
 
 console.log(personalMovieDB);
-
-
->>>>>>> Stashed changes
