@@ -3,5 +3,3 @@ const obj = {
   age: 42,
   isMarried: true
 }
-
-console.log(obj [name]);
