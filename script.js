@@ -1,7 +1,5 @@
 const numberOfFilms = +prompt("How many films do you watched ?", '');
 
-// alert(`You watched ${numberOfFilms}`);
-
 const personalMovieDB = {
   count: numberOfFilms,
   movies: {},
@@ -10,14 +8,12 @@ const personalMovieDB = {
   private: false
 };
 
-const movieName = prompt("Which are the last film do you see ?", '');
-const filmEstimation = +prompt("Please estimate the film", '');
 
-personalMovieDB.movies[movieName] =filmEstimation;
+const movieName = prompt("Which are the last film do you see ?", ''),
+      filmEstimation = +prompt("Please estimate the film", '');
 
-const object = JSON.stringify(personalMovieDB);
+personalMovieDB.movies[movieName] = filmEstimation;
 
-alert(object);
 console.log(personalMovieDB);
 
 
